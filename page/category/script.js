@@ -5,12 +5,12 @@ async function fetchData() {
     data.categories.forEach(category => {
         const card = `
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-3 d-flex align-items-center justify-content-center">
-            <a href="" class="text-decoration-none text-dark">
+        <a href="../category-detail/category-detail.html?c=${category.strCategory}" class="text-decoration-none text-dark">
                 <div class="card mb-4">
                     <img src="${category.strCategoryThumb}" class="card-img-top d-flex align-items-center justify-content-center" alt="${category.strCategory}">
                     <div class="card-body">
                         <h5 class="card-title">${category.strCategory}</h5>
-                        <p class="card-text">${category.strCategoryDescription}</p>
+                        <p class="card-text">${category.strCategoryDescription.replace(/\[\d+\]/g, '')}</p>
                     </div>
                 </div>
             </a>
