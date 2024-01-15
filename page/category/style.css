@@ -3,16 +3,22 @@ body {
     background-color: #fafafa;
 }
 
-.header {
+/* Header */
+header {
     text-align: center;
-    margin-bottom: 20px;
+    background-color: #ffffff;
+}
+
+header .navbar{
+    position: sticky;
+    top: 0;
 }
 
 
 header .navbar-brand {
     font-weight: bold;
     font-size: 1.5rem;
-    color: #333;
+    color: #121212;
 }
 
 header .nav-item {
@@ -23,15 +29,68 @@ header .nav-item {
 
 header .nav-item a {
     font-size: 1rem;
-    color: #333;
+    color: #121212;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 header .nav-item .active {
-    font-weight: 700;
+    font-weight: 800;
 }
 
 header .nav-item a:hover {
-    color: #007bff;
+    color: #ff5100;
+}
+
+
+/* Hero */
+.hero {
+    text-align: center;
+}
+
+section .container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+section .container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #FF9843;
+}
+
+section .container p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+
+/* Category */
+.category .card {
+    width: 15rem;
+    border: none;
+    box-shadow: -7px 10px 21px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    overflow: hidden; 
+}
+
+.category .card-body h5{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.category .card-body p{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #666666;
+    
+}
+
+.card-body .card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
