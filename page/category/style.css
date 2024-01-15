@@ -71,9 +71,13 @@ section .container p {
 .category .card {
     width: 15rem;
     border: none;
-    box-shadow: -7px 10px 21px rgba(0, 0, 0, 0.15);
+    box-shadow: -7px 10px 15px rgba(0, 0, 0, 0.15);
     border-radius: 15px;
     overflow: hidden; 
+}
+
+.category .card-body {
+    margin: 0 12px;
 }
 
 .category .card-body h5{
@@ -93,4 +97,13 @@ section .container p {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+
+
+@media screen and (max-width: 450px) {
+    .category .card {
+        width: 18rem;
+    }
+    
+    
 }
